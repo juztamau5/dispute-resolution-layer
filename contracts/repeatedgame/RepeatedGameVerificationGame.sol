@@ -111,8 +111,8 @@ contract RepeatedGameVerificationGame is IDisputeResolutionLayer {
     // Initialize immutable session variables
     game.spec = spec;
 
-    emit ChallengeCommitted(solver, verifier, gameId);
     ++uniq;
+    emit ChallengeCommitted(solver, verifier, gameId);
   }
 
   /**
